@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw- ViewPort Height and Viewport Width</title>
+
+    <!-- View port height is always 100 of slice horizontal much more used than view port widths (---)
+        View port width is always 100 of slice vertical (|||||)-->
+    <style>
+        /* * target everytihing*/
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        header {
+            background: #333333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+            color: #ffffff;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f4f4f4;
+            color: #333333;
+            text-decoration: none;
+            padding: 0.75rem 2rem;
+        }
+
+        .btn:hover {
+            color: #ffffff;
+            background: orange;
+        }section{
+            padding: 2rem;
+            text-align: center;
+        }
+        @media(max-height:450px) {
+            header{
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Website </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nobis officiis expedita dignissimos ab.
+            Distinctio!</p>
+        <a href="#" class="btn">Find Out More</a>
+    </header>
+    <section>
+        <h3> About Our Company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, doloremque architecto adipisci illo
+            quibusdam molestiae veritatis excepturi dignissimos magni, delectus sequi officiis voluptas earum? Nulla
+            distinctio natus, voluptas maxime quos autem iste tempora in nesciunt asperiores optio quia voluptatum
+            accusantium eveniet? At consequuntur culpa, ipsa suscipit itaque asperiores porro fugiat.</p>
+    </section>
+
+</body>
+
+</html>
